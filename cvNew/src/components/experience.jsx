@@ -1,5 +1,5 @@
 import React from "react";
-import {TbBulbFilled, GiPlainSquare} from 'react-icons/all'
+import {GiPlainSquare} from 'react-icons/gi'
 import HorizontalBlocks from "./horizontal";
 import VerticalBlocks from "./vertical";
 

@@ -1,5 +1,6 @@
 import React from "react";
-import {BsFillTelephoneFill, AiOutlineMail, BsFacebook, BsGithub} from 'react-icons/all'
+import {BsFillTelephoneFill, BsFacebook, BsGithub} from 'react-icons/bs'
+import {AiOutlineMail} from 'react-icons/ai'
 import { TypeAnimation } from "react-type-animation";
 import { useEffect } from "react";
 import { gsap } from "gsap/gsap-core";

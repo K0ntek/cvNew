@@ -1,7 +1,6 @@
 import React from "react";
 import VerticalBlocks from "./vertical";
 
-import {CgProfile, MdCastForEducation, AiOutlineProfile} from 'react-icons/all'
 
 const About =()=>{
     return(
@@ -12,7 +11,6 @@ const About =()=>{
 
                 <div className=" w-full xl:w-[80%] p-[20px] text-white xl:ml-[20%]">
                     <div className="my-[10%] element">
-                    {/* <CgProfile className="text-[40px] mt-[-10px] text-[silver] mx-[10px]"/> */}
                         <h1 className="text-[35px] sm:text-[60px] font-megrim font-extrabold sm:font-normal text-transparent bg-clip-text bg-gradient-to-r from-[silver] to-[white]">O MNIE</h1>
 
                         <p className="text-[20px] text-justify w-[80%] mx-auto font-questrial">Początkujący Front-end Developer w tworzeniu stron internetowych ubiegający o staż na tym stanowisku.
@@ -21,7 +19,6 @@ const About =()=>{
                             Jestem zmotywowany i chętny do dalszego rozwoju w tej dziedzinie.</p>
                     </div>
                         <div className="my-[10%] element" >
-                        {/* <MdCastForEducation className="text-[40px] mt-[-10px] text-[silver] mx-[10px]"/> */}
                         <h1 className="text-[35px] sm:text-[60px] font-megrim font-extrabold sm:font-normal text-transparent bg-clip-text bg-gradient-to-r from-[silver] to-[white]">WYKSZTALCENE</h1>
                             <div className="text-[20px] text-justify w-[80%] mx-auto">
                                 <p className=" font-orbitron text-transparent bg-clip-text bg-gradient-to-r from-[#80573e] to-[#25160d]">09.2020 - obecnie</p>
@@ -34,7 +31,6 @@ const About =()=>{
                             </div>
                         </div>
                     <div className="my-[10%] element">
-                    {/* <AiOutlineProfile className="text-[40px] mt-[-10px] text-[silver] mx-[10px]"/> */}
                     <h1 className="text-[35px] sm:text-[55px] font-megrim font-extrabold sm:font-normal text-transparent bg-clip-text bg-gradient-to-r from-[silver] to-[white]">DOSWIADCZENIE ZAWODOWE</h1>
                         <div className="text-[20px] text-justify w-[80%] mx-auto">
                             <p className=" font-orbitron text-transparent bg-clip-text bg-gradient-to-r from-[#80573e] to-[#25160d]">03.2023 </p>

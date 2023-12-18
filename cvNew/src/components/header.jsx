@@ -2,7 +2,8 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import CountUp from 'react-countup';
 
-import {BsFillTelephoneFill, AiOutlineMail, BsFacebook, BsGithub} from 'react-icons/all'
+import {BsFillTelephoneFill, BsFacebook, BsGithub} from 'react-icons/bs'
+import {AiOutlineMail} from 'react-icons/ai'
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -44,7 +45,7 @@ const Header=()=>{
                     
                     <div className="flex space-x-[10px] mt-[10px]">
                         <a href="https://www.facebook.com/profile.php?id=100009894456441"><BsFacebook className="text-[30px] text-[#000000] hover:text-[#643a20] transition-all duration-300"/></a>
-                        <a href="https://github.com/k0ntek"><BsGithub className="text-[30px] text-[#000000] hover:643a20-[#25160d] transition-all duration-300"/></a>
+                        <a href="https://github.com/k0ntek"><BsGithub className="text-[30px] text-[#000000] hover:text-[#643a20] transition-all duration-300"/></a>
                     </div>
                 </div>
             </div>

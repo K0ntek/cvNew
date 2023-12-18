@@ -19,7 +19,7 @@ body {
   background: url('https://images.unsplash.com/photo-1528372531841-f1228963b0af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc2fHxwdXJwbGUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 200%;
+  /* background-position-y: 200%; */
 }
 
 @keyframes text{

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import project from '../assets/projects/2023-10-22 18-47-30.mp4'
 
 import viteReact from '/vite-react.png'
 import dni from '/dni.png'
