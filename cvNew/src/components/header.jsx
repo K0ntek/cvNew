@@ -19,8 +19,8 @@ const Header=()=>{
     return(
         <div id='home' className="header min-h-screen lg:grid grid-cols-2 mx-auto justify-center text-center">
             <div className="relative top-[50%] translate-y-[30%] sm:translate-y-0 lg:translate-y-[-20%] mx-auto md:w-[70%]">
-            <h1 className="name text-[55px] sm:text-[70px] font-orbitron uppercase">Jakub Kontek</h1>
-            <div className="h-[150px] md:h-fit w-full">
+            <h1 className="name text-[55px] sm:text-[70px] lg:text-[90px] font-megrim uppercase">Jakub Kontek</h1>
+            <div className="h-[150px] w-full">
             <TypeAnimation
                 sequence={[
                     'Programista',
@@ -49,7 +49,7 @@ const Header=()=>{
                     </div>
                 </div>
             </div>
-            <img src="image.jpg" className="hidden sm:block selfImage my-auto mx-auto w-[50%] lg:w-[70%]" alt="image"/>
+            <img src="image.jpg" className="hidden sm:block selfImage my-auto mx-auto w-[40%] lg:w-[70%]" alt="image"/>
         </div>
     )
 }

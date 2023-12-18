@@ -52,8 +52,8 @@ const Projects =()=>{
     };
 
     return(
-       <div className=" bg-black projects">
-             <div className="projectsContainer py-[100px] bg-black w-[90%] relative top-[-60px] mx-auto rounded-[60px]" id='projects'>
+       <div className=" bg-black projects" id='projects'>
+             <div className="projectsContainer py-[100px] bg-black w-[90%] relative top-[-50px] mx-auto rounded-[30px]">
         <div className=" w-[90%] grid md:grid-cols-2 mx-auto gap-y-[40px]">
             <div className="projectTitle mx-auto my-auto text-center sm:w-[60%] space-y-[30px]">
                 <div className="w-fit mx-auto ">

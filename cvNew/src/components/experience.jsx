@@ -22,7 +22,10 @@ const Experience =()=>{
         },
         {
             element: 'Motywacja do ciągłego rozwoju w dziedzinie Front-endu'
-        }
+        },
+        {
+            element: 'Doświadczenie w pracy z Python oraz C++'
+        },
     ]
     return(
         <div>
