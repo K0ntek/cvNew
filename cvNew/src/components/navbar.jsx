@@ -40,7 +40,7 @@ const Navbar=()=>{
     <ul className="flex fixed bottom-7 left-[50%] translate-x-[-50%] bg-white/70 rounded-full z-[99] py-2 px-8">
         {navElements.map((element, i)=>{
             return(
-                <li key={i} className="text-black cursor-pointer bg-white/30 mx-3 md:mx-5 p-[10px] rounded-full text-[25px] md:text-[30px] group hover:text-[#966a43] transition-all duration-300">
+                <li key={i} className="text-black cursor-pointer bg-white/30 mx-3 md:mx-5 p-[10px] rounded-full text-[25px] md:text-[30px] group hover:text-[#966a43] hover:bg-black/10 transition-all duration-200">
                 <Link to={element.link} smooth={true} className=" font-gruppo font-bold">{element.icon}</Link></li>
             )
         })}
