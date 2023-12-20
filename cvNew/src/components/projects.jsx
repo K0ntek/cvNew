@@ -14,21 +14,24 @@ const Projects =()=>{
             link: 'https://project1-7qx9.onrender.com',
             title: ' DESIGN',
             secondary: '#DAA520',
-            shadow: '0px 0px 20px #DAA520'
+            shadow: '0px 0px 20px #DAA520',
+            id: "0"
         },
         {
             img: dni,
             link: 'https://project2-fp6r.onrender.com',
             title: 'DNI OTWARTE',
             secondary: 'silver',
-            shadow: '0px 0px 20px silver'
+            shadow: '0px 0px 20px silver',
+            id: "1"
         },
         {
             img: kwt,
             link: 'https://project3-nf09.onrender.com',
             title: 'KWT',
-            secondary:'#052604',
-            shadow: '0px 0px 20px #053c04'
+            secondary:'#15633f',
+            shadow: '0px 0px 20px #15633f',
+            id: ""
         },
     ]
 
@@ -43,7 +46,7 @@ const Projects =()=>{
 
     const [isHovering, setIsHovering] = useState(false);
 
-    const handleMouseEnter = () => {
+    const handleMouseEnter = (i) => {
       setIsHovering(true);
     };
   
@@ -66,15 +69,14 @@ const Projects =()=>{
                 {projectNav.map((element, i)=>{
                     return(
                             <a href={element.link} key={i}>
-                                    <div className={`project group rounded-3xl relative overflow-hidden w-[95%] md:w-[80%] my-auto mx-auto mt-[-20px] hover:shadow-[0px_0px_20px] transition-all duration-500`}
-                                    style={{boxShadow: isHovering ? element.shadow : 'none'}}  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                                    <div className={` project group rounded-3xl relative overflow-hidden w-[95%] md:w-[80%] my-auto mx-auto mt-[-20px] hover:shadow-[0px_0px_20px] hover:shadow-[rgba(192,192,192,.7)] transition-all duration-500`}>
                                     <div className="group-hover:scale-125 transition-all duration-300">
                                     <div style={{background: `linear-gradient(80deg, rgba(0,0,0,.1), black),url(${element.img})`,
                                          aspectRatio:'16/9',
                                          backgroundRepeat:'no-repeat',
                                           backgroundSize:'cover'}}>
                                      
-                                     <div className="group-hover:bg-black/90 w-full h-full z-40 transition-all">
+                                     <div className="group-hover:bg-black/80 w-full h-full z-40 transition-all">
                                          <div className="relative w-[60%] top-[100%] left-[20%] group-hover:top-[50%] translate-y-[-45%] lg:translate-y-[-15%] transition-all duration-300 delay-50">
                                              <div className="w-fit opacity-0 group-hover:opacity-100">
                                                  <h2 className=" text-[25px] md:text-[25px] xl:text-[30px] font-orbitron" style={{color: element.secondary}}>{element.title}</h2>

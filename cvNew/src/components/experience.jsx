@@ -15,6 +15,9 @@ const Experience =()=>{
             element: 'Dobra znajomość ReactJS'
         },
         {
+            element: 'Dobra znajomość biblioteki GSAP'
+        },
+        {
             element: 'Doświadczenie w pracy z Bootstrap, JQuery oraz API'
         },
         {
@@ -37,7 +40,7 @@ const Experience =()=>{
                <div className="w-full">
                 {skills.map((skill, i)=>{
                    return(
-                    <p key={i} className=" justify-center flex my-[10px]"><GiPlainSquare className="mt-[10px] mx-[10px] text-[10px]"/><span className="text-[20px] font-questrial font-bold text-transparent bg-clip-text bg-gradient-to-r from-black to-[#25160d]">{skill.element}</span></p>
+                    <p key={i} className=" md:justify-center flex my-[10px]"><GiPlainSquare className="mt-[10px] mx-[10px] text-[10px]"/><span className="text-[20px] font-questrial font-bold text-transparent bg-clip-text bg-gradient-to-r from-black to-[#25160d]">{skill.element}</span></p>
                    )
                 })}
                 </div>

@@ -41,7 +41,7 @@ const Header=()=>{
                     0<CountUp end={86} className=" font-orbitron"/></p></div>
 
                     <div className="flex text-[15px] sm:text-[20px] my-[10px]"><AiOutlineMail className="contactIcon"/>
-                    <TypeAnimation sequence={['jakub.kontek05@gmail.com', 2000]} className="font-orbitron"/></div>
+                    <TypeAnimation sequence={['jakub.kontek05@gmail.com', 2000]} className="font-orbitron text-transparent bg-clip-text bg-gradient-to-r from-[#181818] to-[#52280e]"/></div>
                     
                     <div className="flex space-x-[10px] mt-[10px]">
                         <a href="https://www.facebook.com/profile.php?id=100009894456441"><BsFacebook className="text-[30px] text-[#000000] hover:text-[#643a20] transition-all duration-300"/></a>

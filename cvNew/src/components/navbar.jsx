@@ -37,11 +37,14 @@ const Navbar=()=>{
     ]
 
     return(
-    <ul className="flex fixed bottom-7 left-[50%] translate-x-[-50%] bg-white/70 rounded-full z-[99] py-2 px-8">
+        <ul className="flex fixed bottom-7 left-[50%] translate-x-[-50%] bg-white/70 rounded-full z-[99] py-2 px-8 h-[65px]">
         {navElements.map((element, i)=>{
             return(
-                <li key={i} className="navElement text-black cursor-pointer bg-white/30 mx-3 md:mx-5 p-[10px] rounded-full text-[25px] md:text-[30px] group hover:text-[#966a43] hover:bg-black/10 transition-all duration-200">
-                <Link to={element.link} spy={true} smooth={true} className=" font-gruppo font-bold">{element.icon}</Link></li>
+                <li className="navElement text-black cursor-pointer bg-white/30 mx-3 md:mx-5 rounded-full text-[25px] md:text-[30px] group hover:text-[#966a43] hover:bg-black/10 transition-all duration-200">
+                    <Link key={i} to={element.link} spy={true} smooth={true} className=" font-gruppo font-bold">
+                        <p className="p-[10px]">{element.icon}</p>
+                    </Link>
+                </li>
             )
         })}
     </ul>

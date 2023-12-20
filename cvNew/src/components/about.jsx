@@ -30,13 +30,27 @@ const About =()=>{
                             </div>
                             </div>
                         </div>
-                    <div className="my-[10%] element">
+
+                        <div className="my-[10%] element space-y-6">
                     <h1 className="text-[35px] sm:text-[55px] font-megrim font-extrabold sm:font-normal text-transparent bg-clip-text bg-gradient-to-r from-[silver] to-[white]">DOSWIADCZENIE ZAWODOWE</h1>
                         <div className="text-[20px] text-justify w-[80%] mx-auto">
-                            <p className=" font-orbitron text-transparent bg-clip-text bg-gradient-to-r from-[#80573e] to-[#25160d]">03.2023 </p>
-                            <p className="text-[20px] text-justify mx-auto font-questrial" >Stworzenie strony internetowej na dni otwarte szkoły pod kątem wizualnym</p>
+                        <div className="w-fit ml-6">
+                                <p className=" font-orbitron text-transparent bg-clip-text bg-gradient-to-r from-[#634532] to-[#80573e]">09.2022 - 11.2022 </p>
+                                <div className=" mx-auto w-1/2 h-[3px] rounded-full bg-gradient-to-r from-black to-[#25160d]"></div>
+                            </div>
+                            <p className="text-[20px] text-justify mx-auto font-questrial text-[silver] mt-5" >Stworzenie interfejsu dla strony internetowej  KWT</p>
+                        </div>
+
+                        <div className="text-[20px] text-justify w-[80%] mx-auto">
+                            <div className="w-fit ml-6">
+                                <p className=" font-orbitron text-transparent bg-clip-text bg-gradient-to-r from-[#634532] to-[#80573e]">03.2023 </p>
+                                <div className=" mx-auto w-1/2 h-[3px] rounded-full bg-gradient-to-r from-black to-[#25160d]"></div>
+                            </div>
+                            <p className="text-[20px] text-justify mx-auto font-questrial text-[silver] mt-5" >Stworzenie interfejsu dla strony internetowej na dni otwarte szkoły</p>
                         </div>
                     </div>
+
+                    
                 </div>
         </div>
         </>
