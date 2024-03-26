@@ -9,9 +9,10 @@ export default {
       'orbitron': ['Orbitron'],
       'gruppo': ['Gruppo'],
       'michroma': ['Michroma'],
-      'adventPro' : ['Advent Pro'],
-      'megrim' : ['Megrim'],
-      'questrial' : ['Questrial'],
+      'adventPro': ['Advent Pro'],
+      'megrim': ['Megrim'],
+      'questrial': ['Questrial'],
+      'inter': ['Inter']
     }
   },
   plugins: [],

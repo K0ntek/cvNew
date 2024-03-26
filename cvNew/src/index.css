@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Gruppo&family=Michroma&family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Megrim&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   font-family: Arial, Helvetica, sans-serif;
 }
-*::selection{
+
+*::selection {
   background-color: #25160d;
-  color:white;
+  color: white;
 }
 
 body {
@@ -17,53 +19,59 @@ body {
   overflow-x: hidden;
   /* background: url("https://images.unsplash.com/photo-1611361513918-eee28c9d96a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHtxwdXJwbGUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"); */
   /* background: url('https://images.unsplash.com/photo-1547623641-d2c56c03e2a7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
-  background: linear-gradient(80deg, #a87b5f, rgb(218, 218, 218));
+  background: linear-gradient(80deg, #a87b5f, rgb(210, 210, 210), rgb(175, 175, 175)), black;
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position-y: 200%; */
 }
 
-@keyframes text{
-  0%{
-      -webkit-text-stroke: 2px black;
-      color: transparent;
-      text-shadow: 0px 0px 30px #25160d;
-  }
-  50%{
-    color: black;
-    text-shadow: 0px 0px 10px #25160d;
-  }
-  100%{
+@keyframes text {
+  0% {
     -webkit-text-stroke: 2px black;
     color: transparent;
     text-shadow: 0px 0px 30px #25160d;
-}
+  }
+
+  50% {
+    color: black;
+    text-shadow: 0px 0px 10px #25160d;
+  }
+
+  100% {
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    text-shadow: 0px 0px 30px #25160d;
+  }
 }
 
-@keyframes text2{
-  0%{
-      -webkit-text-stroke: 1px white;
-      color: transparent;
-  }
-  50%{
-    color: white;
-  }
-  100%{
+@keyframes text2 {
+  0% {
     -webkit-text-stroke: 1px white;
     color: transparent;
-}
+  }
+
+  50% {
+    color: white;
+  }
+
+  100% {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
 }
 
-@keyframes shadow{
-  0%{
+@keyframes shadow {
+  0% {
     box-shadow: 0px 0px 30px gray;
   }
-  50%{
+
+  50% {
     box-shadow: 0px 0px 0px gray;
   }
-  100%{
+
+  100% {
     box-shadow: 0px 0px 3ch gray;
-}
+  }
 }
 
 
@@ -86,13 +94,14 @@ body {
 
 
 
-.header h1{
+.header h1 {
   -webkit-text-stroke: 2px black;
   color: transparent;
   animation: text 3s both infinite;
 }
 
-.projectTitle h1, .footer h1{
+.projectTitle h1,
+.footer h1 {
   -webkit-text-stroke: 1px white;
   text-shadow: 0px 0px 20px white;
   color: transparent;
@@ -100,26 +109,27 @@ body {
 }
 
 
-.projects, .projectsContainer{
+.projects,
+.projectsContainer {
   box-shadow: 0px 0px 30px 0px #000000;
 }
 
 
-.contactIcon{
+.contactIcon {
   padding: 5px;
   border-radius: 50%;
 
   margin-right: 5px;
-  color:#25160d;
+  color: #25160d;
   font-size: 35px;
 }
 
-.header .selfImage{
+.header .selfImage {
   border-radius: 50%;
   animation: shadow 4s both infinite;
 }
 
-.navElement .active{
+.navElement .active {
   color: #966a43;
-  background: rgba(0,0,0,.10);
+  background: rgba(0, 0, 0, .10);
 }
