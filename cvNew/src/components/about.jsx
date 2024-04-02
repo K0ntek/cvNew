@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import VerticalBlocks from "./vertical";
 
 
@@ -13,7 +13,7 @@ const About = () => {
                     <div className="my-[10%] element">
                         <h1 className="text-[35px] sm:text-[60px] font-inter font-[400] text-transparent bg-clip-text bg-gradient-to-r from-[silver] to-[white]">O MNIE</h1>
 
-                        <p className="text-[20px] text-justify w-[80%] mx-auto font-questrial">Początkujący Front-end Developer w tworzeniu stron internetowych ubiegający o staż na tym stanowisku.
+                        <p className="text-[20px] text-justify w-[80%] mx-auto font-questrial">Początkujący Front-end Developer w tworzeniu stron internetowych ubiegający się o staż/pracę na tym stanowisku.
                             Ambitny, komunikatywny, punktualny, dobrze pracujący w zespole. Specjalizuję się w tworzeniu intuicyjnych,
                             responsywnych i łatwych w obsłudze interfejsów użytkownika, które poprawiają doświadczenie użytkownika.
                             Jestem zmotywowany i chętny do dalszego rozwoju w tej dziedzinie.</p>
