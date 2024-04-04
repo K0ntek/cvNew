@@ -7,6 +7,7 @@ import dni from '/dni.png'
 import kwt from '/kwt.png'
 import lgthnk from '/lgthnk.png'
 import dni2024 from '/dni2024.png'
+import cardQuiz from '/cardQuiz.png'
 
 const Projects = () => {
     const projectNav = [
@@ -25,6 +26,15 @@ const Projects = () => {
             title: 'DNI OTWARTE 2024',
             desc: '',
             secondary: 'crimson',
+            shadow: '0px 0px 20px #15633f',
+            id: ""
+        },
+        {
+            img: cardQuiz,
+            link: 'https://cardquiz.onrender.com',
+            title: 'CARD QUIZ',
+            desc: '',
+            secondary: '#f24602',
             shadow: '0px 0px 20px #15633f',
             id: ""
         },
@@ -98,7 +108,7 @@ const Projects = () => {
                                                 background: `linear-gradient(80deg, rgba(0,0,0,.1), black),url(${element.img})`,
                                                 aspectRatio: '16/9',
                                                 backgroundRepeat: 'no-repeat',
-                                                backgroundSize: 'cover'
+                                                backgroundSize: 'cover',
                                             }}>
 
                                                 <div className="group-hover:bg-black/80 w-full h-full z-40 transition-all">
