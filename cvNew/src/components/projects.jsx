@@ -8,6 +8,7 @@ import kwt from '/kwt.png'
 import lgthnk from '/lgthnk.png'
 import dni2024 from '/dni2024.png'
 import cardQuiz from '/cardQuiz.png'
+import todo from '/todo.png'
 
 const Projects = () => {
     const projectNav = [
@@ -26,6 +27,15 @@ const Projects = () => {
             title: 'DNI OTWARTE 2024',
             desc: '',
             secondary: 'crimson',
+            shadow: '0px 0px 20px #15633f',
+            id: ""
+        },
+        {
+            img: todo,
+            link: 'https://todoapp-du6a.onrender.com',
+            title: 'To-do app',
+            desc: 'W trakcie budowy',
+            secondary: '#20ff7d',
             shadow: '0px 0px 20px #15633f',
             id: ""
         },
