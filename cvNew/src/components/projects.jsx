@@ -9,6 +9,7 @@ import lgthnk from '/lgthnk.png'
 import dni2024 from '/dni2024.png'
 import cardQuiz from '/cardQuiz.png'
 import todo from '/todo.png'
+import gymapp from '/gymapp.png'
 
 const Projects = () => {
     const projectNav = [
@@ -18,6 +19,15 @@ const Projects = () => {
             title: 'LGTHNK',
             desc: 'w trakcie budowy',
             secondary: 'white',
+            shadow: '0px 0px 20px #15633f',
+            id: ""
+        },
+        {
+            img: gymapp,
+            link: 'https://gym-uk87.onrender.com/',
+            title: 'Gym app',
+            desc: 'w trakcie budowy',
+            secondary: '#7a3d17',
             shadow: '0px 0px 20px #15633f',
             id: ""
         },
