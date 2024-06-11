@@ -11,6 +11,7 @@ import cardQuiz from '/cardQuiz.png'
 import todo from '/todo.png'
 import gymapp from '/gymapp.png'
 import carpentry from '/carpentryImage.png'
+import homesell from '/homesellBrzysky.png'
 
 const Projects = () => {
     const projectNav = [
@@ -28,6 +29,14 @@ const Projects = () => {
             link: 'https://carpentry.onrender.com',
             title: 'CARPENTRY',
             desc: 'w trakcie budowy',
+            secondary: '#9b4722',
+            shadow: '0px 0px 20px #15633f',
+            id: ""
+        },
+        {
+            img: homesell,
+            link: 'https://brzysky.onrender.com',
+            title: 'PIOTR BRZYSKI',
             secondary: '#9b4722',
             shadow: '0px 0px 20px #15633f',
             id: ""
