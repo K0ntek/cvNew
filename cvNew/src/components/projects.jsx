@@ -59,15 +59,15 @@ const Projects = () => {
             shadow: '0px 0px 20px #15633f',
             id: ""
         },
-        {
-            img: todo,
-            link: 'https://todoapp-du6a.onrender.com',
-            title: 'To-do app',
-            desc: 'W trakcie budowy',
-            secondary: '#20ff7d',
-            shadow: '0px 0px 20px #15633f',
-            id: ""
-        },
+        //{
+            //img: todo,
+            //link: 'https://todoapp-du6a.onrender.com',
+            //title: 'To-do app',
+            //desc: 'W trakcie budowy',
+            //secondary: '#20ff7d',
+            //shadow: '0px 0px 20px #15633f',
+            //id: ""
+        //},
         {
             img: cardQuiz,
             link: 'https://cardquiz.onrender.com',
@@ -95,15 +95,15 @@ const Projects = () => {
             shadow: '0px 0px 20px #DAA520',
             id: "0"
         },
-        {
-            img: dni,
-            link: 'https://project2-fp6r.onrender.com',
-            title: 'DNI OTWARTE',
-            desc: '',
-            secondary: 'silver',
-            shadow: '0px 0px 20px silver',
-            id: "1"
-        },
+        //{
+            //img: dni,
+            //link: 'https://project2-fp6r.onrender.com',
+            //title: 'DNI OTWARTE',
+            //desc: '',
+            //secondary: 'silver',
+            //shadow: '0px 0px 20px silver',
+            //id: "1"
+        //},
     ]
 
     useEffect(() => {
