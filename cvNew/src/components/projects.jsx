@@ -28,7 +28,7 @@ const Projects = () => {
             img: carpentry,
             link: 'https://carpentry.onrender.com',
             title: 'CARPENTRY',
-            desc: 'w trakcie budowy',
+            desc: '',
             secondary: '#9b4722',
             shadow: '0px 0px 20px #15633f',
             id: ""
