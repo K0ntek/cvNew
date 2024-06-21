@@ -10,7 +10,7 @@
 }
 
 *::selection {
-  background-color: #25160d;
+  background-color: #b1683b;
   color: white;
 }
 
@@ -19,13 +19,13 @@ body {
   overflow-x: hidden;
   /* background: url("https://images.unsplash.com/photo-1611361513918-eee28c9d96a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHtxwdXJwbGUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"); */
   /* background: url('https://images.unsplash.com/photo-1547623641-d2c56c03e2a7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
-  background: linear-gradient(80deg, #a87b5f, rgb(210, 210, 210), rgb(175, 175, 175)), black;
+  background: linear-gradient(80deg, #ffffff, rgb(218, 218, 218), rgb(224, 224, 224)), rgb(255, 255, 255);
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position-y: 200%; */
 }
 
-@keyframes text {
+/* @keyframes text {
   0% {
     -webkit-text-stroke: 2px black;
     color: transparent;
@@ -42,7 +42,7 @@ body {
     color: transparent;
     text-shadow: 0px 0px 30px #25160d;
   }
-}
+} */
 
 @keyframes text2 {
   0% {
@@ -94,21 +94,6 @@ body {
 
 
 
-.header h1 {
-  -webkit-text-stroke: 2px black;
-  color: transparent;
-  animation: text 3s both infinite;
-}
-
-.projectTitle h1,
-.footer h1 {
-  -webkit-text-stroke: 1px white;
-  text-shadow: 0px 0px 20px white;
-  color: transparent;
-  animation: text2 3s both infinite;
-}
-
-
 .projects,
 .projectsContainer {
   box-shadow: 0px 0px 30px 0px #000000;
@@ -125,7 +110,7 @@ body {
 }
 
 .header .selfImage {
-  border-radius: 50%;
+  border-radius: 50px;
   animation: shadow 4s both infinite;
 }
 

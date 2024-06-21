@@ -126,13 +126,13 @@ const Projects = () => {
     };
 
     return (
-        <div className=" bg-black projects min-h-screen" id='projects'>
+        <div className=" bg-zinc-950 w-[90%] mx-auto rounded-[50px] mb-10 projects min-h-screen" id='projects'>
             <div className=" py-10">
                 <div className="projectsContainer py-[100px] bg-[#090909] w-[90%] mx-auto rounded-[30px]">
                     <div className=" w-[90%] grid md:grid-cols-2 mx-auto gap-y-[40px]">
                         <div className="projectTitle mx-auto my-auto text-center sm:w-[60%] space-y-[30px]">
                             <div className="w-fit mx-auto ">
-                                <h1 className=" text-[40px] lg:text-[60px] font-inter font-[200] tracking-[10px]"><span className="text-[80px] lg:text-[120px] font-inter font-[200]">MOJE</span><br />PROJEKTY</h1>
+                                <h1 className=" text-6xl font-inter text-transparent bg-clip-text bg-gradient-to-r from-white to-[#8b8b8b] font-[500] tracking-[10px]"><span className=" lg:text-9xl font-inter font-[300]">MOJE</span><br />PROJEKTY</h1>
 
                                 <div className="projectBorder w-[40%] h-[8px] bg-gradient-to-r from-gray-100 to-black rounded-full mx-auto"></div>
                             </div>

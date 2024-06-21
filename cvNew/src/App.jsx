@@ -10,6 +10,7 @@ import Experience from './components/experience'
 import Navbar from './components/navbar'
 import Footer from './components/footer'
 import Projects from './components/projects'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -18,8 +19,9 @@ function App() {
       <Navbar/>
       <Header />
       <About/>
-      <Experience/>
+      {/* <Experience/> */}
       <Projects/>
+      <Contact/>
       <Footer/>
     </>
   )

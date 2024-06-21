@@ -1,5 +1,6 @@
 import React from "react";
 import { BsFillTelephoneFill, BsFacebook, BsGithub } from 'react-icons/bs'
+import { FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from 'react-icons/ai'
 import { TypeAnimation } from "react-type-animation";
 import { useEffect } from "react";
@@ -26,7 +27,7 @@ const Footer = () => {
             <div className="bg-black"> <div className="footerBorder w-[80%] mx-auto rounded-full h-[6px] bg-gradient-to-r from-black to-[#25160d] "></div></div>
             <div className="footer bg-black pt-[50px]">
                 <div className="text-white text-center py-[10px] space-y-[20px]">
-                    <h1 className=" text-[40px] lg:text-[70px] font-megrim">JAKUB KONTEK</h1>
+                    <h1 className=" text-[40px] lg:text-[70px] font-inter font-[200] text-transparent bg-clip-text bg-gradient-to-r from-[silver] to-white">JAKUB KONTEK</h1>
                     <div className="w-fit mx-auto h-[120px] sm:h-fit">
                         <TypeAnimation
                             sequence={[
@@ -37,7 +38,7 @@ const Footer = () => {
                             ]}
                             speed={50}
                             repeat={Infinity}
-                            className="text-[35px] font-orbitron text-transparent bg-clip-text bg-gradient-to-r from-[silver] to-white"
+                            className="text-[35px] font-inter text-transparent bg-clip-text bg-gradient-to-r from-[silver] to-white"
                         />
 
                         {/* <h2 className="text-[35px] font-orbitron text-transparent bg-clip-text bg-gradient-to-r from-[#4702a0] to-[#1282f1]">FRONT-END DEVELOPER</h2> */}
@@ -47,6 +48,7 @@ const Footer = () => {
                 <div className="flex space-x-[10px] text-white py-[5px] pb-[20px] justify-center">
                     <a href="https://www.facebook.com/profile.php?id=100009894456441"><BsFacebook className="text-[30px] hover:text-[#8d512b] transition-all duration-300" /></a>
                     <a href="https://github.com/k0ntek"><BsGithub className="text-[30px] hover:text-[#8d512b] transition-all duration-300" /></a>
+                    <a href="https://github.com/k0ntek"><FaLinkedinIn className="text-[30px] text-[#000000] hover:text-[#643a20] transition-all duration-300" /></a>
                 </div>
                 <div className=" text-white text-[20px] text-center py-[20px] justify-center space-y-[10px] sm:space-y-0 sm:flex sm:space-x-[50px]">
                     <p className="font-questrial flex justify-center">   <BsFillTelephoneFill className="text-[#8d512b] mt-[5px] mx-[10px]" />790 839 086</p>

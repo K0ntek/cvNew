@@ -33,17 +33,17 @@ const Experience = () => {
     ]
     return (
         <div className=" overflow-hidden">
-            <div className="w-full h-[6px] bg-gradient-to-r from-black to-[#25160d]"></div>
-            <div id='skills' className="exp bg-[silver]  grid md:grid-cols-[60%_40%]">
+            {/* <div className="w-full h-[6px] bg-gradient-to-r from-black to-[#25160d]"></div> */}
+            <div id='skills' className="exp grid lg:grid-cols-[60%_40%]">
                 <div className="py-6">
                     <div className="  relative top-[50%] translate-y-[-50%]">
                         <div className="flex text-center align-middle justify-center mx-auto">
-                            <h1 className="text-[35px] sm:text-[55px] font-inter font-[200] tracking-widest"> UMIEJĘTNOŚCI</h1></div>
+                            <h1 className="text-5xl font-inter font-[400] tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-white to-[#acacac]"> UMIEJĘTNOŚCI</h1></div>
 
                         <div className="w-full">
                             {skills.map((skill, i) => {
                                 return (
-                                    <p key={i} className=" sm:justify-center md:justify-start lg:justify-center flex my-[10px]"><GiPlainSquare className="mt-[10px] mx-[10px] text-[10px]" /><span className="text-[20px] font-questrial font-bold text-transparent bg-clip-text bg-gradient-to-r from-black to-[#25160d]">{skill.element}</span></p>
+                                    <p key={i} className=" md:justify-start flex my-[10px]"><GiPlainSquare className=" text-white mt-[10px] mx-[10px] text-[10px]" /><span className="text-[20px] font-questrial font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-[#acacac]">{skill.element}</span></p>
                                 )
                             })}
                         </div>
