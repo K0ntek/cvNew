@@ -11,11 +11,13 @@ import Navbar from './components/navbar'
 import Footer from './components/footer'
 import Projects from './components/projects'
 import Contact from './components/Contact'
+import Blocks from './components/Blocks'
 
 function App() {
 
   return (
     <>
+      <Blocks/>
       <Navbar/>
       <Header />
       <About/>

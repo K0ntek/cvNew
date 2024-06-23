@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 import viteReact from '/vite-react.png'
 import dni from '/dni.png'
@@ -12,6 +14,7 @@ import todo from '/todo.png'
 import gymapp from '/gymapp.png'
 import carpentry from '/carpentryImage.png'
 import homesell from '/homesellBrzysky.png'
+
 
 const Projects = () => {
     const projectNav = [
@@ -106,65 +109,79 @@ const Projects = () => {
         //},
     ]
 
+    const responsive = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 5
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1200 },
+          items: 2
+        },
+        tablet: {
+          breakpoint: { max: 1200, min: 700 },
+          items: 2
+        },
+        mobile: {
+          breakpoint: { max: 700, min: 0 },
+          items: 1
+        }
+      };
+
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
-        // gsap.fromTo('.projectsContainer', {y:'400px', opacity:0}, {y:0, opacity:1, duration:.6, scrollTrigger:{trigger:'.projects', start:'top 40%'}})
-        gsap.fromTo('.project', { y: '200px', opacity: 0 }, { y: 0, opacity: 1, duration: .5, stagger: .2, scrollTrigger: { trigger: '.projects', start: 'top 40%' } })
-        gsap.fromTo('.projectTitle', { x: '-200px', opacity: 0 }, { x: 0, opacity: 1, duration: .5, scrollTrigger: { trigger: '.projects', start: 'top 40%' } })
-        gsap.fromTo('.projectBorder', { width: '8px', opacity: 0 }, { width: '40%', opacity: 1, duration: .5, delay: .4, scrollTrigger: { trigger: '.projects', start: 'top 40%' } })
+        gsap.fromTo('.projectTitle', { x: '-200px', opacity: 0 }, { x: 0, opacity: 1, duration: .5, scrollTrigger: { trigger: '.projectsContainer', start: 'top 40%' } })
 
     }, [])
 
-    const [isHovering, setIsHovering] = useState(false);
-
-    const handleMouseEnter = (i) => {
-        setIsHovering(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsHovering(false);
-    };
-
     return (
-        <div className=" bg-zinc-950 w-[90%] mx-auto rounded-[50px] mb-10 projects min-h-screen" id='projects'>
+        <div className="w-[90%] mx-auto rounded-[50px] mb-10 projects bg-[#ffffff]" id='projects'>
             <div className=" py-10">
-                <div className="projectsContainer py-[100px] bg-[#090909] w-[90%] mx-auto rounded-[30px]">
-                    <div className=" w-[90%] grid md:grid-cols-2 mx-auto gap-y-[40px]">
-                        <div className="projectTitle mx-auto my-auto text-center sm:w-[60%] space-y-[30px]">
-                            <div className="w-fit mx-auto ">
-                                <h1 className=" text-6xl font-inter text-transparent bg-clip-text bg-gradient-to-r from-white to-[#8b8b8b] font-[500] tracking-[10px]"><span className=" lg:text-9xl font-inter font-[300]">MOJE</span><br />PROJEKTY</h1>
+                <div className="projectsContainer p-[20px] mx-auto rounded-[30px]">
 
-                                <div className="projectBorder w-[40%] h-[8px] bg-gradient-to-r from-gray-100 to-black rounded-full mx-auto"></div>
+                            <div className="w-fit mx-auto projectTitle">
+                                <h1 className=" text-2xl sm:text-3xl lg:text-5xl font-inter mb-10 text-transparent bg-clip-text bg-gradient-to-r from-[#111] to-[#634533] font-[400] tracking-[10px]">MOJE PROJEKTY</h1>
                             </div>
-                        </div>
 
+                    <div className="gd-carousel-wrapper">
+                    <Carousel
+                      responsive={responsive}
+                      infinite={true}
+                      autoPlaySpeed={5000}
+                      autoPlay={true}
+                      renderDotsOutside={true}
+                      arrows={true}
+                      showDots={true}
+                      className="relative gd-carousel">
                         {projectNav.map((element, i) => {
-                            return (
-                                <a href={element.link} key={i}>
-                                    <div className={` project group rounded-3xl relative overflow-hidden w-[95%] md:w-[80%] my-auto mx-auto mt-[-20px] hover:shadow-[0px_0px_30px] hover:shadow-gray-900/80 transition-all duration-500`}>
-                                        <div className="group-hover:scale-125 transition-all duration-300">
-                                            <div style={{
-                                                background: `linear-gradient(80deg, rgba(0,0,0,.1), black),url(${element.img})`,
-                                                aspectRatio: '16/9',
-                                                backgroundRepeat: 'no-repeat',
-                                                backgroundSize: 'cover',
-                                            }}>
+                                return (
+                                    <a href={element.link} key={i}>
+                                        <div className={` project group rounded-3xl relative overflow-hidden w-[98%] mx-auto transition-all duration-500`}>
+                                            <div className="group-hover:scale-125 transition-all duration-300">
+                                                <div style={{
+                                                    background: `linear-gradient(80deg, rgba(0,0,0,.1), black),url(${element.img})`,
+                                                    aspectRatio: '16/9',
+                                                    backgroundRepeat: 'no-repeat',
+                                                    backgroundSize: 'cover',
+                                                }}>
 
-                                                <div className="group-hover:bg-black/80 w-full h-full z-40 transition-all">
-                                                    <div className="relative w-[60%] top-[100%] left-[20%] group-hover:top-[50%] translate-y-[-45%] lg:translate-y-[-15%] transition-all duration-300 delay-50">
-                                                        <div className="w-fit opacity-0 group-hover:opacity-100">
-                                                            <h2 className=" text-[25px] md:text-[25px] xl:text-[30px] font-inter font-[400]" style={{ color: element.secondary }}>{element.title}</h2>
-                                                            <div className={`w-[4px] h-[2px] rounded-full mx-auto group-hover:w-[50%] transition-all duration-1000 delay-200`} style={{ background: element.secondary }} ></div>
+                                                    <div className="group-hover:bg-black/80 w-full h-full z-40 transition-all">
+                                                        <div className="relative w-[60%] top-[100%] left-[20%] group-hover:top-[50%] translate-y-[-45%] lg:translate-y-[-15%] transition-all duration-300 delay-50">
+                                                            <div className="w-fit opacity-0 group-hover:opacity-100">
+                                                                <h2 className="text-lg md:text-xl xl:text-3xl font-inter font-[400]" style={{ color: element.secondary }}>{element.title}</h2>
+                                                                <div className={`w-[4px] h-[2px] rounded-full mx-auto group-hover:w-[50%] transition-all duration-1000 delay-200`} style={{ background: element.secondary }} ></div>
+                                                            </div>
+                                                            <p className=" my-3 opacity-70 text-white text-[10px] font-inter font-[100]">{element.desc}</p>
                                                         </div>
-                                                        <p className=" my-3 opacity-70 text-white text-[10px] font-inter font-[100]">{element.desc}</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                            )
-                        })}
+                                    </a>
+                                )
+                            })}
+                    </Carousel>
                     </div>
                 </div>
             </div>

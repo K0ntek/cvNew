@@ -6,6 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 import { useEffect } from "react";
 import { gsap } from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/all";
+import { Link } from "react-scroll";
 
 const Footer = () => {
 
@@ -21,45 +22,80 @@ const Footer = () => {
 
     }, [])
 
+    const navElements = [
+        {
+            name: 'strona główna',
+            link: 'home'
+        },
+        {
+            name: 'o mnie',
+            link: 'about'
+        },
+        {
+            name: 'umiejętności',
+            link: 'skills'
+        },
+        {
+            name: 'moje projekty',
+            link: 'projects'
+        },
+
+        {
+            name: 'skontaktuj się',
+            link: 'contact'
+        },
+    ]
+
     return (
         <div className="z-[99]">
-            {/* <div className="bg-black"> <div className="w-[85%] mx-auto rounded-full h-[10px] bg-gradient-to-r from-[#1b003d] to-[#42088f] "></div></div> */}
-            <div className="bg-black"> <div className="footerBorder w-[80%] mx-auto rounded-full h-[6px] bg-gradient-to-r from-black to-[#25160d] "></div></div>
-            <div className="footer bg-black pt-[50px]">
-                <div className="text-white text-center py-[10px] space-y-[20px]">
-                    <h1 className=" text-[40px] lg:text-[70px] font-inter font-[200] text-transparent bg-clip-text bg-gradient-to-r from-[silver] to-white">JAKUB KONTEK</h1>
-                    <div className="w-fit mx-auto h-[120px] sm:h-fit">
-                        <TypeAnimation
-                            sequence={[
-                                'Front-end developer',
-                                3000,
-                                '',
-                                100
-                            ]}
-                            speed={50}
-                            repeat={Infinity}
-                            className="text-[35px] font-inter text-transparent bg-clip-text bg-gradient-to-r from-[silver] to-white"
-                        />
+            <div className="footer bg-zinc-950 pt-10">
+                <h1 className=" mb-10 ml-[10%] text-6xl text-center sm:text-start font-inter font-[400] text-transparent bg-clip-text bg-gradient-to-r from-[#1f1f1f] to-[silver]">BĄDŹ NA BIEŻĄCO</h1>
+                <div className="grid sm:grid-cols-3 pb-10 space-y-10 sm:space-y-0">
 
-                        {/* <h2 className="text-[35px] font-orbitron text-transparent bg-clip-text bg-gradient-to-r from-[#4702a0] to-[#1282f1]">FRONT-END DEVELOPER</h2> */}
-                        <div className="w-[50%] h-[4px] bg-[#25160d] rounded-full mx-auto group-hover:w-[50%] transition-all duration-1000 delay-200"></div>
+                            <div className="text-white text-center py-[10px] space-y-[20px]">
+                                <div className=" w-fit mx-auto">
+                                    <h1 className=" text-4xl font-inter font-[400] text-transparent bg-clip-text bg-gradient-to-r from-[#686868] to-white">JAKUB KONTEK</h1>
+                                    <h3 className=" text-transparent bg-clip-text bg-gradient-to-r from-[#686868] to-white text-xl tracking-widest">front-end developer</h3>
+                                    <div className=" mx-auto w-1/5 h-[1px] bg-gradient-to-r from-[#8d512b] to-[#130b06]"></div>
+                                </div>
+
+                                <div className=" text-white text-[20px] space-y-[10px] w-fit mx-auto">
+                                <p className="font-questrial flex">   <BsFillTelephoneFill className="text-[#8d512b] mt-[5px] mx-[10px]" />790 839 086</p>
+
+                                <p className="font-questrial flex text-[18px]">  <AiOutlineMail className="text-[#8d512b] mt-[5px] mx-[10px]" />jakub.kontek05@gmail.com</p>
+                            </div>
+
+                            </div>
+
+                    <div className=" text-[#afafaf]">
+                        <h2 className=" font-inter text-center text-2xl font-[500] tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#acacac] to-white">Zaobserwuj!</h2>
+                    <div className="flex space-x-[10px] py-[5px] pb-[20px] justify-center">
+                            <a href="https://www.facebook.com/profile.php?id=100009894456441"><BsFacebook className="text-[30px] hover:text-[#8d512b] transition-all duration-300" /></a>
+                            <a href="https://github.com/k0ntek"><BsGithub className="text-[30px] hover:text-[#8d512b] transition-all duration-300" /></a>
+                            <a href="https://www.linkedin.com/in/jakub-kontek-33909b2a1/"><FaLinkedinIn className="text-[30px] hover:text-[#8d512b] transition-all duration-300" /></a>
+                        </div>
                     </div>
-                </div>
-                <div className="flex space-x-[10px] text-white py-[5px] pb-[20px] justify-center">
-                    <a href="https://www.facebook.com/profile.php?id=100009894456441"><BsFacebook className="text-[30px] hover:text-[#8d512b] transition-all duration-300" /></a>
-                    <a href="https://github.com/k0ntek"><BsGithub className="text-[30px] hover:text-[#8d512b] transition-all duration-300" /></a>
-                    <a href="https://github.com/k0ntek"><FaLinkedinIn className="text-[30px] text-[#000000] hover:text-[#643a20] transition-all duration-300" /></a>
-                </div>
-                <div className=" text-white text-[20px] text-center py-[20px] justify-center space-y-[10px] sm:space-y-0 sm:flex sm:space-x-[50px]">
-                    <p className="font-questrial flex justify-center">   <BsFillTelephoneFill className="text-[#8d512b] mt-[5px] mx-[10px]" />790 839 086</p>
 
-                    <p className="font-questrial flex justify-center text-[18px]">  <AiOutlineMail className="text-[#8d512b] mt-[5px] mx-[10px]" />jakub.kontek05@gmail.com</p>
+                    <div>
+                        <h2 className=" font-inter text-center text-2xl font-[500] tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#acacac] to-white">Menu</h2>
+                        <div className=" mx-auto w-fit space-y-2">
+                        {navElements.map((element, i)=>{
+                            return(
+                                <Link to={element.link} smooth={true}><p className=" text-[#afafaf] cursor-pointer font-inter text-lg hover:text-white">{element.name}</p></Link>
+                            )
+                        })}
+                        </div>
+                    </div>
+
                 </div>
-                <div className="bg-[#010101] py-[20px]">
-                    <p className="w-[80%] mx-auto text-[16px] text-[#8d512b] font-gruppo text-justify">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie
+                <div className="w-full py-3 bg-black">
+                <p className=" font-inter text-center text-[12px] font-[400] tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#acacac] to-white">©Jakub Kontek 2024</p>
+                </div>
+                {/* <div className="bg-[#070707] w-full py-[20px]">
+                    <p className="w-[80%] mx-auto text-[12px] text-[#b46636] font-inter font-[200] text-justify">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie
                         z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób
                         fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</p>
-                </div>
+                </div> */}
             </div>
         </div>
     )

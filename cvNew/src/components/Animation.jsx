@@ -54,7 +54,7 @@ const Animation = () => {
     }, []);
 
     return (
-        <div className='animationWrapper grid grid-cols-5 aspect-square h-full'>
+        <div className='animationWrapper w-2/3 mx-auto lg:w-full grid grid-cols-5 aspect-square h-full'>
             <div className=' aspect-square md:aspect-auto md:h-full'>
                 <div className='horizontal w-full h-full bg-black'>
                     <div className=' space-y-3 relative top-[50%] translate-y-[-50%]'>
