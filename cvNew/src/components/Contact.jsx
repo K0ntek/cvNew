@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useRef } from 'react'
 import axios from 'axios'
+import Blocks from './Blocks'
 
 const Contact = () => {
 
@@ -42,7 +43,10 @@ const Contact = () => {
     }
 
   return (
-    <div className='w-[90%] mx-auto my-7 rounded-[30px] bg-gradient-to-t from-[#efefef] to-transparent grid md:grid-cols-2 py-10' id='contact'>
+    <div className='w-[90%] relative mx-auto my-7 rounded-[30px] bg-gradient-to-t from-[#efefef] to-transparent grid md:grid-cols-2 py-10' id='contact'>
+      {/* <div className="absolute w-full h-full z-[-1]"> */}
+        {/* <Blocks/> */}
+      {/* </div> */}
       <div>
         <h2 className=' text-sm font-inter font-[500] text-center text-transparent bg-clip-text bg-gradient-to-r from-black to-[#8b8b8b]'>KONTAKT</h2>
         <h1 className=' text-2xl font-inter font-[500] text-center text-transparent bg-clip-text bg-gradient-to-r from-black to-[#8b8b8b]'>NAPISZ DO MNIE!</h1>
