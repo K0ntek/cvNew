@@ -35,7 +35,7 @@ const Header = () => {
 
     return (
         <div id='home' className="header min-h-screen lg:grid grid-cols-2 mx-auto mt-[120px] lg:mt-0">
-            <div className="relative ml-[10%] align-center lg:top-[50%] my-10 lg:translate-y-[-25%] mx-auto space-y-3 text-center lg:text-start">
+            <div className="relative sm:ml-[10%] align-center lg:top-[50%] my-10 lg:translate-y-[-25%] mx-auto space-y-3 text-center lg:text-start">
             <div className="w-full">
                     <TypeAnimation
                         sequence={[
