@@ -88,9 +88,9 @@ const Footer = () => {
                     </div>
 
                 </div>
-                <div className="w-full py-3 bg-black">
-                <p className=" font-inter text-center text-[12px] font-[400] tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#acacac] to-white">©Jakub Kontek 2024</p>
-                </div>
+                 <div className="w-full py-3 bg-black space-y-3">
+                    <p className=" w-4/5 mx-auto text-justify font-inter text-[10px] font-[400] tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#acacac] to-white">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</p>
+                    <p className=" font-inter text-center text-[12px] font-[600] tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#acacac] to-white">©Jakub Kontek 2024</p>
                 {/* <div className="bg-[#070707] w-full py-[20px]">
                     <p className="w-[80%] mx-auto text-[12px] text-[#b46636] font-inter font-[200] text-justify">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie
                         z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób
