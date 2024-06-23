@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import gsap from 'gsap'
+import { IoTriangleOutline } from "react-icons/io5";
 
 const Blocks = () => {
     useEffect(()=>{
@@ -24,6 +25,10 @@ const Blocks = () => {
         <div className=" blockV w-5 h-5 rounded-full border-[1px] border-black absolute bottom-[5%] right-[20%] hidden sm:block"></div>
         <div className=" blockV w-8 h-[1px] bg-gradient-to-r from-black to-transparent absolute bottom-[10%] left-[30%] rotate-90 hidden sm:block"></div>
         <div className=" blockH w-6 h-6 rounded-full border-[1px] border-black absolute top-[60%] left-[50%]"></div>
+        <IoTriangleOutline className=' blockH text-md absolute bottom-[25%] left-[35%]'/>
+        <IoTriangleOutline className=' blockV text-md absolute top-[5%] left-[15%]'/>
+        <IoTriangleOutline className=' blockV text-md absolute top-[35%] left-[45%]'/>
+        <div className=" blockV w-8 h-[1px] bg-gradient-to-r from-transparent to-black absolute top-[20%] left-[30%] rotate-90 hidden sm:block"></div>
     </div>
   )
 }
