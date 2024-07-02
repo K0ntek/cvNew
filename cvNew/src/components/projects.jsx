@@ -14,6 +14,7 @@ import todo from '/todo.png'
 import gymapp from '/gymapp.png'
 import carpentry from '/carpentryImage.png'
 import homesell from '/homesellBrzysky.png'
+import uiConcept from '/uiConcept.png'
 
 
 const Projects = () => {
@@ -27,12 +28,12 @@ const Projects = () => {
             shadow: '0px 0px 20px #15633f',
             id: ""
         },
-         {
-            img: carpentry,
-            link: 'https://carpentry.onrender.com',
-            title: 'CARPENTRY',
-            desc: '',
-            secondary: '#9b4722',
+        {
+            img: uiConcept,
+            link: 'https://designconcept.onrender.com',
+            title: 'Design concept',
+            desc: 'w trakcie budowy',
+            secondary: '#ff9352',
             shadow: '0px 0px 20px #15633f',
             id: ""
         },
@@ -44,6 +45,15 @@ const Projects = () => {
             shadow: '0px 0px 20px #15633f',
             id: ""
         },
+         {
+            img: carpentry,
+            link: 'https://carpentry.onrender.com',
+            title: 'CARPENTRY',
+            desc: '',
+            secondary: '#9b4722',
+            shadow: '0px 0px 20px #15633f',
+            id: ""
+        },  
         {
             img: gymapp,
             link: 'https://gym-uk87.onrender.com/',
