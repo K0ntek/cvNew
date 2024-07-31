@@ -15,6 +15,7 @@ import gymapp from '/gymapp.png'
 import carpentry from '/carpentryImage.png'
 import homesell from '/homesellBrzysky.png'
 import uiConcept from '/uiConcept.png'
+import kontekHeader from '/kontekHedaer.png'
 
 
 const Projects = () => {
@@ -34,6 +35,15 @@ const Projects = () => {
             title: 'Design concept',
             desc: 'w trakcie budowy',
             secondary: '#ff9352',
+            shadow: '0px 0px 20px #15633f',
+            id: ""
+        },
+         {
+            img: kontekHeader,
+            link: 'https://jakubkontek.onrender.com',
+            title: 'FREELANCE PORTFOLIO',
+            desc: '',
+            secondary: 'white',
             shadow: '0px 0px 20px #15633f',
             id: ""
         },
