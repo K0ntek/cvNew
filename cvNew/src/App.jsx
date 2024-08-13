@@ -21,7 +21,6 @@ function App() {
       <Navbar/>
       <Header />
       <About/>
-      {/* <Experience/> */}
       <Projects/>
       <Contact/>
       <Footer/>

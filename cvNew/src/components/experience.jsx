@@ -37,8 +37,13 @@ const Experience = () => {
             <div id='skills' className="exp grid lg:grid-cols-[60%_40%]">
                 <div className="py-6">
                     <div className="  relative top-[50%] translate-y-[-50%]">
-                        <div className="flex text-center align-middle justify-center mx-auto">
+                        <div className="flex mx-auto">
+                            <div className=" ml-8">
+                            <h2 className=' font-inter text-lg font-[600] tracking-tight
+                                    bg-gradient-to-r from-[rgb(255,149,73)] to-[rgb(208,89,91)]
+                                    inline-block text-transparent bg-clip-text'>UMIEJĘTNOŚCI</h2>
                             <h1 className=" text-2xl md:text-5xl font-inter font-[400] tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-white to-[#acacac]"> UMIEJĘTNOŚCI</h1></div>
+                            </div>
 
                         <div className="w-full">
                             {skills.map((skill, i) => {
